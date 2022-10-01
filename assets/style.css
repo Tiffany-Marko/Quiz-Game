@@ -1,0 +1,26 @@
+#True {
+    margin: 15px;
+}
+#False {
+    margin: 15px;
+}
+#container {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.choice {
+    background-color: rgb(177, 49, 70);
+    border-radius: 5px; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: blue; 
+/* blue = text */
+/* can add padding here */
+    font-size: 25px;
+    /* changes button size (font inside of buttons */
+}
+.questions {
+    display: none; 
+}
