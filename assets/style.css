@@ -11,11 +11,11 @@
 
 }
 .choice {
-    background-color: rgb(177, 49, 70);
+    background-color: rgb(231, 136, 152);
     border-radius: 5px; 
     margin-top: 15px;
     margin-bottom: 15px;
-    color: blue; 
+    color: rgb(26, 26, 80); 
 /* blue = text */
 /* can add padding here */
     font-size: 25px;
@@ -23,4 +23,13 @@
 }
 .questions {
     display: none; 
+}
+body {
+    background-color: blueviolet; /* styles whole background*/
+}
+#startQuiz {
+    background-color: blue; /*button background color*/
+}
+#quizGame {
+    color: green; /*bg color on title*/
 }

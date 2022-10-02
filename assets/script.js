@@ -40,9 +40,81 @@ function startQuiz() {
     quizState.quizIsRunning = true
     console.log(quizState)
     createTimer() 
-
    
 }
 
 
-//focus on making actual questions, work on styling more, etc
+ var answers = {
+    "question1": "yes",
+    "question2": "no",
+    "question3": "yes",
+    "question4": "no",
+    "question5": "yes",
+ }
+ function question1(userAnswer) {
+    if (userAnswer === answers.question1) {
+        console.log("answer is correct")
+    } else { 
+        console.log("answer is incorrect")
+
+    }
+    document.getElementById("question1") .style.display = "none" //this is so that the first question disappears after it is answered
+    document.getElementById("question2") .style.display = "block" //this is so the second question appears- repeat as needed. 
+ }
+ function question2(userAnswer) {
+    if (userAnswer === answers.question2) { //if the answer the user sumbmitted is equal to the answer in the answer key, then the answer is correct. If it's not equal, then the answer is incorrect. 
+        console.log("answer is correct")
+    } else { 
+        console.log("answer is incorrect")
+    }
+    document.getElementById("question2") .style.display = "none"
+    document.getElementById("question3") .style.display = "block"
+
+
+ }
+ function question3(userAnswer) {
+    if (userAnswer === answers.question3) {
+        console.log("answer is correct")
+    } else { 
+        console.log("answer is incorrect")
+    }
+    document.getElementById("question3") .style.display = "none"
+    document.getElementById("question4") .style.display = "block"
+
+ }
+ function question4(userAnswer) {
+    if (userAnswer === answers.question4) {
+        console.log("answer is correct")
+    } else { 
+        console.log("answer is incorrect")
+    }
+    document.getElementById("question4") .style.display = "none"
+    document.getElementById("question5") .style.display = "block"
+ }
+ function question5(userAnswer) {
+    if (userAnswer === answers.question5) {
+        console.log("answer is correct")
+    } else { 
+        console.log("answer is incorrect")
+    }
+    document.getElementById("question5") .style.display = "none"
+
+ }
+
+//   function chooseYes() {
+//     if (answers.question1 === "yes"){
+//         console.log("answer is correct")
+//     } else {
+//             console.log("answers is incorrect")
+//     }    
+
+// }
+// function chooseNo() {
+//     if (answers.question1 === "no"){
+//         console.log("answer is incorrect")
+//     } else {
+//         console.log("answer is correct")
+//     }
+
+
+

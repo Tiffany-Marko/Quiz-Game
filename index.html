@@ -10,10 +10,10 @@
 
 <body>
     <div id="container">
-        <h1>Quiz Game</h1>
+        <h1 id= "quizGame">Quiz Game</h1>
         <!-- below, add/complete paragraph for descrip -->
         <p>enter descriptive paragrph here</p>
-        <button onClick="startQuiz()" id="Start Quiz">Start Quiz</button>
+        <button onClick="startQuiz()" id="startQuiz">Start Quiz</button>
         <div>
             <p id="test-timer">timer 
                 <span id="QuizTimer"></span> <!--this is where we put our timer-->
@@ -23,29 +23,29 @@
             <!-- attributes ^ -->
 
 
-            <h1>Is the Earth Flat?</h1>
-            <div><button class="choice">Yes</button></div>
-            <div><button class="choice">No</button></div>
+            <h1>Do Bearded Dragons wave at familiar people and lizards?</h1>
+            <div><button onClick="question1('yes')" class="choice">Yes</button></div>
+            <div><button onClick="question1('no')" class="choice">No</button></div>
         </div>
         <div id = "question2" class="questions">
-            <h1>Is the Earth Flat?</h1>
-            <div><button class="choice">Yes</button></div>
-            <div><button class="choice">No</button></div>
+            <h1>Do Bearded Dragons like the cold?</h1>
+            <div><button onClick="question2('yes')" class="choice">Yes</button></div>
+            <div><button onClick="question2('no')" class="choice">No</button></div>
         </div>
         <div id ="question3" class="questions">
-            <h1>Is the Earth Flat?</h1>
-            <div><button class="choice">Yes</button></div>
-            <div><button class="choice">No</button></div>
+            <h1>Can you leash train Bearded Dragons?</h1>
+            <div><button onClick="question3('yes')" class="choice">Yes</button></div>
+            <div><button onClick="question3('no')" class="choice">No</button></div>
         </div>
         <div id = "question4"class="questions">
-            <h1>Is the Earth Flat?</h1>
-            <div><button class="choice">Yes</button></div>
-            <div><button class="choice">No</button></div>
+            <h1>Do Bearded Dragons need all four legs to run?</h1>
+            <div><button onClick="question4('yes')" class="choice">Yes</button></div>
+            <div><button onClick="question4('no')" class="choice">No</button></div>
         </div>
         <div id = "question5" class="questions">
-            <h1>Is the Earth Flat?</h1>
-            <div><button class="choice">Yes</button></div>
-            <div><button class="choice">No</button></div>
+            <h1>Can Bearded Dragons swim?</h1>
+            <div><button onClick="question5('yes')" class="choice">Yes</button></div>
+            <div><button onClick="question5('no')" class="choice">No</button></div>
         </div>
     </div>
     <script src="./assets/script.js"></script>
