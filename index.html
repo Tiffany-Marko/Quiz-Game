@@ -12,12 +12,28 @@
     <div id="container">
         <h1 id= "quizGame">Quiz Game</h1>
         <!-- below, add/complete paragraph for descrip -->
-        <p>enter descriptive paragrph here</p>
+        <p>how well do you know dragons? </p>
         <button onClick="startQuiz()" id="startQuiz">Start Quiz</button>
         <div>
             <p id="test-timer">timer 
                 <span id="QuizTimer"></span> <!--this is where we put our timer-->
             </p> <!--to display total tim eleft in quiz to user-->
+            <p id="score">score
+                <span id="QuizScore"></span>
+            </p>
+                
+        </div>
+        <div id="endsection" class="hidden">
+
+            <h2>You Finished!</h2>
+            <p id="endscore">score
+                <span id="endquizscore"></span></p>
+            <form id="form">
+                <label for="">Initials</label>
+                <input id="saveInput" name="Initials"/>
+                <button type="submit">Save</button>
+            </form>
+
         </div>
         <div id ="question1" class="questions">
             <!-- attributes ^ -->

@@ -24,6 +24,9 @@
 .questions {
     display: none; 
 }
+.hidden {
+    display: none; /* waits to display the end*/
+}
 body {
     background-color: blueviolet; /* styles whole background*/
 }
