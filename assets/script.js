@@ -28,7 +28,7 @@ formElement.addEventListener("submit", function (event){
 
     }
     localStorage.setItem("Quiz Results", JSON.stringify(saveData)) //JSON.stringify takes a JavaScript object (saveData) and turns it into a string
-    
+
 })
 function createTimer() {
     //everytime you have a function, you need the curly braces; even if it's inside another curly brace.
@@ -47,7 +47,6 @@ function createTimer() {
         console.log(quizState.timer)//referencing quiz object from line 2
 },1000)//every one second, we'll console log the timer. 
 
-
 }
 function startQuiz() {
     // console.log("clickedButton")
@@ -60,7 +59,6 @@ function startQuiz() {
     scoreElement.textContent = quizState.score 
     console.log(quizState)
     createTimer() 
-   
 }
 function endQuiz(){
     quizState.quizIsRunning = false 
